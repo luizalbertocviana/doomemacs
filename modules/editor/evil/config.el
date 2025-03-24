@@ -428,6 +428,35 @@ don't offer any/enough real value to users.")
 
 
 ;;
+;;;; Keychords
+
+(use-package! key-chord
+  :config
+  (key-chord-mode 1)
+  (key-chord-define evil-insert-state-map "''" "\"")
+  (key-chord-define evil-insert-state-map "11" "!")
+  (key-chord-define evil-insert-state-map "22" "@")
+  (key-chord-define evil-insert-state-map "33" "#")
+  (key-chord-define evil-insert-state-map "44" "$")
+  (key-chord-define evil-insert-state-map "55" "%")
+  (key-chord-define evil-insert-state-map "77" "&")
+  (key-chord-define evil-insert-state-map "88" "*")
+  (key-chord-define evil-insert-state-map "99" "(")
+  (key-chord-define evil-insert-state-map "00" ")")
+  (key-chord-define evil-insert-state-map "--" "_")
+  (key-chord-define evil-insert-state-map "==" "+")
+  (key-chord-define evil-insert-state-map "qq" "/")
+  (key-chord-define evil-insert-state-map "ww" "?")
+  (key-chord-define evil-insert-state-map "[[" "{")
+  (key-chord-define evil-insert-state-map "]]" "}")
+  (key-chord-define evil-insert-state-map "\\\\" "|")
+  (key-chord-define evil-insert-state-map ",," "<")
+  (key-chord-define evil-insert-state-map ".." ">")
+  (key-chord-define evil-insert-state-map ";;" ":")
+  (key-chord-define evil-insert-state-map "//" "?")
+  )
+
+;;
 ;;; Keybinds
 
 ;; TODO: zu{q,w} - undo last marking
