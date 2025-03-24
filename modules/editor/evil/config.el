@@ -534,7 +534,7 @@ don't offer any/enough real value to users.")
       :v  "g-"    #'evil-numbers/dec-at-pt-incremental
       :v  "g+"    #'evil-numbers/inc-at-pt
       (:when (modulep! :tools lookup)
-       :nv "K"   #'+lookup/documentation
+       :nv "gh"   #'+lookup/documentation
        :nv "gd"  #'+lookup/definition
        :nv "gD"  #'+lookup/references
        :nv "gf"  #'+lookup/file
