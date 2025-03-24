@@ -460,6 +460,15 @@ don't offer any/enough real value to users.")
 ;;
 ;;; Keybinds
 
+(map! :nv "L" #'evil-end-of-line
+      :nv "H" #'evil-first-non-blank
+      :nv "J" #'evil-forward-paragraph
+      :nv "K" #'evil-backward-paragraph
+      :i "C-l" #'forward-char
+      :i "C-k" #'evil-previous-line
+      :i "C-j" #'evil-next-line
+      :i "C-h" #'backward-char)
+
 ;; TODO: zu{q,w} - undo last marking
 
 (map! :v  "@"     #'+evil:apply-macro
