@@ -500,7 +500,8 @@ don't offer any/enough real value to users.")
   (key-chord-define evil-insert-state-map ".." ">")
   (key-chord-define evil-insert-state-map ";;" ":")
   (key-chord-define evil-insert-state-map "//" "?")
-  )
+
+  (key-chord-define evil-normal-state-map "ss" #'evil-ex-search-forward))
 
 ;;
 ;;; Keybinds
