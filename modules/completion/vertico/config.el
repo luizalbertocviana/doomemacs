@@ -46,8 +46,8 @@ overrides `completion-styles' during company completion sessions.")
         "C-M-j" #'vertico-next-group
         "C-k"   #'vertico-previous
         "C-M-k" #'vertico-previous-group
-        "C-h" (cmds! (eq 'file (vertico--metadata-get 'category)) #'vertico-directory-up)
-        "C-l" (cmds! (eq 'file (vertico--metadata-get 'category)) #'+vertico/enter-or-preview))
+        "C-l" #'vertico-exit
+        "C-h" #'evil-force-normal-state)
 
   ;; Cleans up path when moving directories with shadowed paths syntax, e.g.
   ;; cleans ~/foo/bar/// to /, and ~/foo/bar/~/ to ~/.
