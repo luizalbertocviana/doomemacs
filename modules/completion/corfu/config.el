@@ -40,6 +40,9 @@ If any return non-nil, `corfu-auto' will not invoke as-you-type completion.")
 (use-package! corfu
   :hook (doom-first-input . global-corfu-mode)
   :config
+  (map! :map corfu-map
+        :i "C-l" #'corfu-insert
+        :i "C-h" #'corfu-quit)
   (setq corfu-auto t
         global-corfu-modes
         '((not erc-mode
