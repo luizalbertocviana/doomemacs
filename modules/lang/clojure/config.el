@@ -200,6 +200,8 @@
   (setq cider-repl-display-help-banner nil)
 
   (map! (:localleader
+          (:map (cider-inspector-mode-map)
+            "d" #'cider-inspector-def-current-val)
           (:map (clojure-mode-map clojurescript-mode-map clojurec-mode-map)
             "'"  #'cider-jack-in-clj
             "\"" #'cider-jack-in-cljs
