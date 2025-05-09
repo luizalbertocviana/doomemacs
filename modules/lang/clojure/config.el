@@ -303,7 +303,9 @@
               "p" #'cider-test-run-project-tests
               "r" #'cider-test-rerun-failed-tests
               "s" #'cider-test-run-ns-tests-with-filters
-              "t" #'cider-test-run-test)))
+              "t" #'cider-test-run-test))
+          (:map (cider-inspector-mode-map)
+            "d" #'cider-inspector-def-current-val))
 
         (:when (modulep! :editor evil +everywhere)
           :map cider-repl-mode-map
