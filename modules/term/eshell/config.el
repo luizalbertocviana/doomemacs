@@ -232,6 +232,9 @@ Emacs versions < 29."
          "e" #'eshell-insert-envvar
          "s" #'+eshell/search-history)))
 
+(use-package! eat
+  :config
+  (add-hook! 'eshell-load-hook #'eat-eshell-mode))
 
 (use-package! eshell-up
   :commands eshell-up eshell-up-peek)
