@@ -13,7 +13,7 @@
 (package! evil-lion :pin "5a0bca151466960e090d1803c4c5ded88875f90a")
 (package! evil-nerd-commenter :pin "ae52c5070a48793e2c24474c9c8dbf20175d18a0")
 (package! evil-numbers :pin "616aff9e5cee012954756ed2715209fa90308cdf")
-(package! evil-snipe :pin "16317d7e54313490a0fe8642ed9a1a72498e7ad2")
+(package! evil-snipe :pin "16317d7e54313490a0fe8642ed9a1a72498e7ad2" :disable t)
 (package! evil-surround :pin "da05c60b0621cf33161bb4335153f75ff5c29d91")
 (package! evil-textobj-anyblock
   :recipe (:host github
