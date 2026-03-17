@@ -495,6 +495,17 @@ don't offer any/enough real value to users.")
 
   (key-chord-define evil-normal-state-map "ss" #'evil-ex-search-forward))
 
+(use-package! flash
+  :commands (flash-jump flash-jump-continue
+                        flash-treesitter)
+  :custom
+  (flash-multi-window t)
+  :config
+  (require 'flash-evil)
+  (flash-evil-setup t) ; t = also set up f/t/F/T char motions
+  ;; Search integration (labels during C-s, /, ?)
+  (require 'flash-isearch)
+  (flash-isearch-mode 1))
 ;;
 ;;; Keybinds
 
@@ -502,6 +513,7 @@ don't offer any/enough real value to users.")
       :nv "H" #'evil-first-non-blank
       :nv "J" #'evil-forward-paragraph
       :nv "K" #'evil-backward-paragraph
+      :n "s" #'flash-jump
       :i "C-l" #'forward-char
       :i "C-k" #'evil-previous-line
       :i "C-j" #'evil-next-line
