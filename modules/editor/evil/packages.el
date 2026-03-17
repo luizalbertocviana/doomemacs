@@ -27,6 +27,7 @@
   :recipe (:host github :repo "rgrinberg/evil-quick-diff")
   :pin "69c883720b30a892c63bc89f49d4f0e8b8028908")
 (package! key-chord :pin "fc75b1451759121601110da8ddfadcf5156318af")
+(package! flash :pin "42fbc5883fd802df97cae842c403deba4c433d45")
 
 ;;
 (when (modulep! +everywhere)
