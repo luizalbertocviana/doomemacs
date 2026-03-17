@@ -8,3 +8,4 @@
 (package! eshell-did-you-mean :pin "80cd8c4b186a2fb29621cf634bcf2bcd914f1e3d")
 (package! eshell-syntax-highlighting :pin "62418fd8b2380114a3f6dad699c1ba45329db1d2")
 (package! pcmpl-args :pin "bccbfe931a8383fb4ecc75551305057a9bd33700")
+(package! eat :pin "c8d54d649872bfe7b2b9f49ae5c2addbf12d3b99")
