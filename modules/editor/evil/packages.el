@@ -16,7 +16,7 @@
   ;; REVIEW: Don't byte-compile until juliapath/evil-numbers#30 is addressed.
   :recipe (:build (:not compile))
   :pin "616aff9e5cee012954756ed2715209fa90308cdf")
-(package! evil-snipe :pin "16317d7e54313490a0fe8642ed9a1a72498e7ad2")
+(package! evil-snipe :pin "16317d7e54313490a0fe8642ed9a1a72498e7ad2" :disable t)
 (package! evil-surround :pin "da05c60b0621cf33161bb4335153f75ff5c29d91")
 (package! evil-textobj-anyblock
   :recipe (:host github
